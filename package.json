@@ -1,0 +1,17 @@
+{
+  "name": "dm-bonn-sumory-bears",
+  "version": "1.0.0",
+  "description": "Deutsches Museum Bonn version of the Summy Bears exhibit",
+  "main": "index.js",
+  "dependencies": {
+    "degit": "^2.8.4"
+  },
+  "scripts": {
+    "build": "rm -rf ./dist && rm -rf ./sumory-bears && degit github:IMAGINARY/sumory-bears#v1.0.0 --force sumory-bears && cp -R ./extras/ ./sumory-bears && cd ./sumory-bears && npm install && npm run build && cd .. && cp -r ./sumory-bears/dist ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IMAGINARY/dm-bonn-sumory-bears.git"
+  },
+  "private": true
+}

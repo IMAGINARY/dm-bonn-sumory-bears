@@ -1,0 +1,5 @@
+/sumory-bears
+/dist
+/work
+node_modules
+!**/.gitkeep
