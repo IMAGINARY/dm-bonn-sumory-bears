@@ -7,7 +7,7 @@
     "degit": "^2.8.4"
   },
   "scripts": {
-    "build": "rm -rf ./dist && rm -rf ./sumory-bears && degit github:IMAGINARY/sumory-bears#v1.1.0 --force sumory-bears && cp -R ./extras/ ./sumory-bears && cd ./sumory-bears && npm install && npm run build && cd .. && cp -r ./sumory-bears/dist ./dist"
+    "build": "rm -rf ./dist && rm -rf ./sumory-bears && degit github:IMAGINARY/sumory-bears#v1.1.0 --force sumory-bears && cp -R ./extras/. ./sumory-bears/. && cd ./sumory-bears && npm install && npm run build && cd .. && cp -r ./sumory-bears/dist ./dist"
   },
   "repository": {
     "type": "git",
